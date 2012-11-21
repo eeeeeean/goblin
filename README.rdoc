@@ -2,10 +2,14 @@ Goblin is a simple irc alert bot. To install:
 
     gem install goblin
 
+Goblin takes as arugments: an array of strings as messages, the irc nick you want to pm (string), the irc server (string), the port (int).
+
 Example:
 
     require 'goblin'
-    a = ["Some", "error", "messages"]
-    Goblin.new(a, recipient_irc_nick, server, port).run
 
-Goblin will log into irc, send you a pm of error messages, quit.
+    a = ["some", "error", "messages"]
+
+    Goblin.new(a, "pirate", "irc.freenode.net", 6667).run
+
+Goblin will log into irc, send pirate a pm of error messages, quit.
