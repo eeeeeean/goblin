@@ -12,4 +12,4 @@ Example:
 
     Goblin.new(a, "pirate", "irc.freenode.net", 6667).run
 
-Goblin will log into irc, send pirate a pm of error messages, quit.
+ Goblin will log into irc, send pirate a pm of error messages, quit.
